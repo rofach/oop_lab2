@@ -30,7 +30,7 @@ namespace Matrix
             Array.Copy(matrix, this.matrix, matrix.Length);
         }
 
-        private bool IsRectangle(double[][] arr)
+        private bool IsRectangular(double[][] arr)
         {
             int rows = arr.Length;
             for (int i = 1; i < rows; i++)
@@ -44,7 +44,7 @@ namespace Matrix
         {
 
 
-            if (!IsRectangle(matrix))
+            if (!IsRectangular(matrix))
             {
                 throw new Exception("зубчастий масив не прямокутний");
             }
@@ -61,7 +61,7 @@ namespace Matrix
 
         }
 
-        private bool IsRectangle(string[] str)
+        private bool IsRectangular(string[] str)
         {
             for (int i = 1; i < str.Length; i++)
             {
@@ -74,7 +74,7 @@ namespace Matrix
         }
         public MyMatrix(string[] str)
         {
-            if (!IsRectangle(str))
+            if (!IsRectangular(str))
                 throw new Exception("масив рядків не прямокутний");
 
             int rows = str.Length;
