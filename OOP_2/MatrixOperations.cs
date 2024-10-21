@@ -70,7 +70,7 @@ namespace Matrix
             return new MyMatrix(GetTransponedArray());
         }
 
-        public void TransponeMe()
+        public void TransposeMe()
         {
             matrix = GetTransponedArray();
         }

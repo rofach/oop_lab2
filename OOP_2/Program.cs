@@ -37,7 +37,7 @@ namespace MainProgram
                 Console.WriteLine("matrix1");
                 Console.WriteLine(matrix1);
 
-                matrix1.TransponeMe();
+                matrix1.TransposeMe();
                 Console.WriteLine("matrix1 ttt");
                 Console.WriteLine(matrix1);
                 Console.WriteLine("matrix2");

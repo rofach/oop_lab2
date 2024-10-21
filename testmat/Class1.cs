@@ -17,7 +17,7 @@ namespace TestMatrix
             double[,] exp = new double[3, 2] { {2,7 },{5,3 },{1,4 } };
 
             MyMatrix matrix = new MyMatrix(arr);
-            matrix.TransponeMe();
+            matrix.TransposeMe();
             double[,] actual = new double[3,2];
             TestMultiply.copyMatrixIntoArray(matrix, actual);
 
